@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechDuo - Facts & Favorites</title>
+  <link rel="stylesheet" href="./Css/style.css" />
+</head>
+<body>
+  <header>
+    <a href="../index.html">
+      <div class="logo">TD</div>
+    </a>
+    <h1>CURIOUS FACTS</h1>
+    <a href="https://github.com/alusilcof5" class="github-link" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" />
+  <span>@alusilcof5</span>
+</a>
+
+  </header>
+
+  <main>
+    <!-- Random Facts Section -->
+    <div class="content-section">
+      <h2>Random Curious Fact</h2>
+      <div class="fact-container">
+        <div id="data">Click "Get New Fact" to load a curious fact!</div>
+        <div class="buttons">
+          <button onclick="fetchData()">Get New Fact</button>
+          <button class="add-favorite-btn" onclick="addToFavorites()">Add to Favorites ⭐</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorites Section -->
+    <div class="content-section">
+      <h2>My Favorite Facts</h2>
+      <div class="buttons">
+        <button onclick="showFavorites()">Refresh Favorites</button>
+        <button onclick="clearAllFavorites()" style="background: linear-gradient(45deg, #e74c3c, #c0392b) !important;">Clear All</button>
+      </div>
+      <div class="listContent">
+        <table id="favorites-table">
+          <thead>
+            <tr>
+              <th>Favorite Facts</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="favorites-list"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Developed by Ana Lucía Silva Córdoba </p>
+  </footer>
+
+  <script src="./javascript/showFavoritesCall.js"></script>
+    <script src="./javascript/buttons.js"></script>
+</body>
+</html>

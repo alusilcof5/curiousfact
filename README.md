@@ -1,42 +1,63 @@
-# Curious Facts API
+# Curious Facts – Frontend App
 
-## 🕯️ Project context
+Una aplicación web que muestra datos curiosos aleatorios obtenidos desde una API pública. Permite guardar tus favoritos y consultarlos más tarde, todo desde una misma página.
 
-The Useless Facts company wants to develop the front-end part of an application that returns curious facts that nobody cares about, the idea is that within the main page, we can see each curious fact that the https://uselessfacts API returns. jsph.pl/ and if we like a curious fact, we can save it within a favorite space on the same main page.
+---
 
-## 💻 Technologies
+##  Contexto del proyecto
 
--HTML
--CSS
--Javascript
+**Curious Facts** es una propuesta para la empresa *Useless Facts*, cuyo objetivo es desarrollar una interfaz web simple y atractiva que muestre hechos curiosos que nadie pidió, pero que igual disfrutarás. Los datos provienen de la API pública:  
+👉 [`https://uselessfacts.jsph.pl`](https://uselessfacts.jsph.pl)
 
-## 🛠 Tools
+La funcionalidad principal incluye:
+- Obtener un dato curioso aleatorio.
+- Visualizarlo inmediatamente en la página principal.
+- Guardarlo como favorito con un solo clic.
+- Acceder a tus datos favoritos desde la misma vista.
 
--figma
--Visual Studio Code
--Trello
--Git/GitHub
+---
 
-## 📓 Themes
+## 💻 Tecnologías utilizadas
 
--Atomic Design
-- Responsive design (Html - Css)
-- Events and event Handler (Javascript)
-- Functions (Javascript)
-- DOM (Javascript - HTML)
--Fetch API
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
-## How does it work?
+---
 
-Our website is in charge of bringing to light some random curious fact...
-You can save it in favorites to consult it at another time if you wish. For that, remember that you must accept the use and policies of "cookies".
+## Herramientas de desarrollo
 
-## How to view the page?
--Clone repository
--Press Go Live in Visual Studio
--Enjoy it!
+- Figma (prototipado)
+- Visual Studio Code
+- Trello (gestión ágil de tareas)
+- Git & GitHub (control de versiones)
 
-## Developers
+---
 
-- Ana Lucía Silva y Rafaela Silveira
-# curiousfact
+## Temas y conceptos aplicados
+
+- Diseño atómico (_Atomic Design_)
+- Diseño responsivo (HTML + CSS)
+- Manipulación del DOM
+- Funciones y eventos en JavaScript
+- Fetch API para consumo de datos externos
+- Gestión de estado (favoritos en localStorage)
+- Uso de cookies para preferencias del usuario
+
+---
+
+##  ¿Cómo funciona?
+
+1. Al cargar la página, se realiza una petición a la API de datos inútiles.
+2. Se muestra el dato curioso en pantalla.
+3. Si el usuario lo desea, puede marcarlo como favorito.
+4. El sistema guarda la selección en `localStorage` (tras aceptar cookies).
+5. Los datos favoritos se muestran en una sección especial de la página.
+
+---
+
+## ▶ ¿Cómo ver la página en tu entorno local?
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/curiousfact.git
